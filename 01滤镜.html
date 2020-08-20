@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+			img{
+				width: 200px;
+				display: block;
+				margin: 0 auto;
+				transition: all 3s;
+			}
+			img:hover{
+				-webkit-filter: none;
+			}
+			.img1{
+				/**
+				 * 滤镜
+				 grayscale:设置灰度,1是100% 0是0%
+				 */
+				-webkit-filter: grayscale(1);
+				
+			}
+			.img2{
+				/**
+				 brightness:设置亮度,1是正常 0是关灯 超过1则越来越亮
+				 */
+				-webkit-filter: brightness(2);
+			}
+			.img3{
+				/**
+				 sepia:设置褐色,1是100% 0是正常
+				 */
+				-webkit-filter: sepia(1);
+			}
+			.img4{
+				/**
+				 blur:设置模糊度,单位像素
+				 */
+				-webkit-filter: blur(10px);
+			}
+			.img5{
+				/**
+				 contrast:设置对比度,1为正常 0没有任何对比度变为灰色 超过1黑的越黑 白的越白
+				 */
+				-webkit-filter: contrast(2);
+			}
+			.img6{
+				/**
+				 saturate:设置饱和度,1为正常 0没有任何对比度变为灰色 2的饱和度比较好 红润
+				 */
+				-webkit-filter: saturate(2);
+			}
+			.img7{
+				/**
+				 invert:设置胶片底色效果 即反转
+				 */
+				-webkit-filter: invert(1);
+			}
+			.img8{
+				/**
+				 hue-rotate:设置色相旋转 可以0-360
+				 */
+				-webkit-filter: hue-rotate(180deg);
+			}
+			.img9{
+				/**
+				 * 呈现一个铅笔画出来的效果
+				 */
+				-webkit-filter: blur(10px) brightness(10) grayscale(1);
+				transition: all 10s;
+			}
+			.img9:hover{
+				-webkit-filter: blur(0px) brightness(1) grayscale(1);
+			}
+		</style>
+	</head>
+	<body>
+		<img class="img1" src="img/1.jpg" >
+		<img class="img2" src="img/1.jpg" >
+		<img class="img3" src="img/1.jpg" >
+		<img class="img4" src="img/1.jpg" >
+		<img class="img5" src="img/1.jpg" >
+		<img class="img6" src="img/1.jpg" >
+		<img class="img7" src="img/1.jpg" >
+		<img class="img8" src="img/1.jpg" >
+		<img class="img9" src="img/1.jpg" >
+	</body>
+</html>
